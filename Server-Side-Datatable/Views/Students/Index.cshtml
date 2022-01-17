@@ -224,8 +224,10 @@
         //Optional: Details button listener
         function detailsClick(obj) {
             //var rowID = $(obj).attr('id');
+            // Get Id of clicked student
             var studentId = $(obj).closest('tr').find('td:first').html();
-            alert("Id = " + studentId + " for details");
+            //Go to details page of student
+            window.location.replace("Students/Details/" + studentId);
         }
         // Optional: Edit button listener
         function editClick(obj) {
