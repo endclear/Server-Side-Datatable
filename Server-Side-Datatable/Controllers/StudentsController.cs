@@ -20,7 +20,7 @@ namespace Server_Side_Datatable.Controllers
         // Search is applied only to Firstname and Lastname properties
         public JsonResult GetFilteredItems()
         {
-            System.Threading.Thread.Sleep(2000);//Used to display loading spinner in demonstration, remove this line in production
+            System.Threading.Thread.Sleep(500);//Used to display loading spinner in demonstration, remove this line in production
             int draw = Convert.ToInt32(Request.Query["draw"]);
 
             // Data to be skipped , 
